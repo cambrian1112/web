@@ -1,0 +1,146 @@
+<!-- main.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mount Jianglang</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <h1>Mount Jianglang</h1>
+            <img src="jianglang1.webp" alt="Mount Jianglang" class="header-image">
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="sights.html">Sights</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="access.html">Access</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="welcome">
+        <h2>Welcome to Mount Jianglang</h2>
+        <p>Explore the natural beauty, cultural heritage, and historical sites of Mount Jianglang.</p>
+        <p>Mount Jianglang is a scenic area located in Zhejiang Province, China. It is known for its stunning natural landscapes, including towering peaks, deep valleys, and clear streams. The area has a rich history dating back thousands of years and is home to numerous cultural and historical sites.</p>
+        <p>Some of the must-see attractions include the Tianyuan Temple, the Dragon Spring, and the Sky Bridge. Visitors can enjoy hiking, sightseeing, and learning about the local culture and traditions.</p>
+    </section>
+
+    <section id="carousel">
+        <div class="carousel">
+            <img src="lun1.webp" alt="Image 1" class="carousel-image active">
+            <img src="lun2.webp" alt="Image 2" class="carousel-image">
+            <img src="lun3.webp" alt="Image 3" class="carousel-image">
+            <img src="lun4.webp" alt="Image 4" class="carousel-image">
+            <img src="lun5.webp" alt="Image 5" class="carousel-image">
+            <img src="lun6.webp" alt="Image 6" class="carousel-image">
+            <img src="lun7.webp" alt="Image 7" class="carousel-image">
+            <img src="lun8.webp" alt="Image 8" class="carousel-image">
+            <img src="lun9.webp" alt="Image 9" class="carousel-image">
+            <img src="lun10.webp" alt="Image 10" class="carousel-image">
+        </div>
+    </section>
+
+    <section id="reviews">
+        <h2>User Reviews</h2>
+        <div class="review">
+            <p>"Absolutely breathtaking! The views from the top are worth the hike."</p>
+            <p>- John Doe</p>
+        </div>
+        <div class="review">
+            <p>"The history and culture of Mount Jianglang are fascinating. Highly recommend visiting the Tianyuan Temple."</p>
+            <p>- Jane Smith</p>
+        </div>
+        <div class="review">
+            <p>"Great place for a family trip. The kids loved the Dragon Spring and the Sky Bridge."</p>
+            <p>- Sarah Johnson</p>
+        </div>
+    </section>
+
+    <section id="articles">
+        <h2>Related Articles</h2>
+        <ul>
+            <li><a href="https://www.meipian.cn/57dcu5hu">"Beautiful Jianglang Mountain, Danxia beautiful scenery"</a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=MzUzMDE4MDMzMg==&mid=2247505280&idx=1&sn=7653405a6d69dbe5ef95b412bb596136&chksm=fb382407f4ddcb3f13f7fa593e4e75e398db1b01b5532c42ed90eacb83706d4a479b68a1c74b&scene=27">Yao Jun/Climbing Jianglang Mountain record</a></li>
+            <li><a href="https://baijiahao.baidu.com/s?id=1797544815898006363&wfr=spider&for=pc">Jianglang Mountain in Quzhou, "magnificent crown the world, beautiful southeast", Zhejiang's first world natural heritage</a></li>
+        </ul>
+    </section>
+
+    <section id="tips">
+        <h2>Tourism Tips</h2>
+        <ul>
+            <li>Best time to visit: April to October</li>
+            <li>Recommended clothing: Comfortable walking shoes and light clothing</li>
+            <li>Entrance fee: CNY 50 per person</li>
+            <li>Opening hours: 8:00 AM - 6:00 PM</li>
+        </ul>
+    </section>
+
+    <section id="location">
+        <h2>Location</h2>
+        <iframe src="https://map.baidu.com/poi/%E6%B1%9F%E9%83%8E%E5%B1%B1%E9%A3%8E%E6%99%AF%E5%8C%BA/@13199782.301763698,3296816.5702517717,15.84z?uid=e116be544f9cb362c91b9547&ugc_type=3&ugc_ver=1&device_ratio=2&compat=1&pcevaname=pc4.1&querytype=detailConInfo&da_src=shareurl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- main.html -->
+<section id="contact">
+    <h1>Booking Here</h1>
+    <form id="contactForm">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="terms">I agree to the terms and conditions</label>
+            <input type="checkbox" id="terms" name="terms" required>
+        </div>
+        <button type="submit">Register</button>
+    </form>
+    <div id="formResponse"></div> 
+    <!-- Modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modalText"></p>
+    </div>
+</div>
+</section>
+
+<section id="bookings">
+    <h2>Booked Visitors</h2>
+    <ul id="bookingList">
+        <!-- 预订信息将在这里动态插入 -->
+    </ul>
+</section>
+
+    <script src="scripts.js"></script>
+
+    <footer>
+        <p>Developed by 202332110208</p>
+    </footer>
+</body>
+</html>

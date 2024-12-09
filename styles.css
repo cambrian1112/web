@@ -1,0 +1,435 @@
+/* styles.css */
+
+/* 设置整个页面的基本样式 */
+body {
+    font-family: Arial, sans-serif; /* 设置字体为Arial，如果没有则使用sans-serif */
+    line-height: 1.6; /* 设置行高为1.6 */
+    margin: 0; /* 去除默认的外边距 */
+    padding: 0; /* 去除默认的内边距 */
+}
+
+/* 设置页面头部的样式 */
+header {
+    background: #e6e3e3; /* 设置背景颜色为浅灰色 */
+    padding: 10px; /* 设置内边距为10像素 */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 添加阴影效果 */
+    text-align: center; /* 文本居中对齐 */
+    font-size: 20px; /* 设置字体大小为20像素 */
+}
+
+/* 设置页面头部标题的样式 */
+header h1 {
+    margin: 0; /* 去除默认的外边距 */
+    font-size: 50px; /* 设置字体大小为50像素 */
+}
+
+/* 设置导航栏列表的样式 */
+nav ul {
+    list-style: none; /* 去除默认的列表样式 */
+    padding: 0; /* 去除默认的内边距 */
+    margin: 0; /* 去除默认的外边距 */
+    background-color: rgb(236, 70, 139); /* 设置背景颜色为绿色 */
+}
+
+/* 设置导航栏列表项的样式 */
+nav ul li {
+    display: inline-block; /* 设置为行内块元素 */
+    margin-right: 10px; /* 设置右侧外边距为10像素 */
+}
+
+/* 设置导航栏链接的样式 */
+nav ul li a {
+    text-decoration: none; /* 去除下划线 */
+    color: #fff; /* 设置文字颜色为白色，以便在绿色背景上更清晰 */
+    display: block; /* 设置为块元素 */
+    padding: 5px 10px; /* 设置内边距为上下5像素，左右10像素 */
+    border-radius: 5px; /* 设置圆角为5像素 */
+    transition: background-color 0.3s; /* 设置背景颜色过渡时间为0.3秒 */
+}
+
+/* 设置导航栏链接悬停时的样式 */
+nav ul li a:hover {
+    background-color: rgb(43, 143, 201); /* 设置背景颜色为蓝色 */
+    color: rgb(108, 216, 126); /* 设置文字颜色为绿色 */
+}
+
+/* 设置段落区域的样式 */
+section {
+    margin: 20px 0; /* 设置上下外边距为20像素 */
+}
+
+/* 设置表格的样式 */
+table {
+    width: 100%; /* 设置宽度为100% */
+    border-collapse: collapse; /* 合并边框 */
+    margin: 20px 0; /* 设置上下外边距为20像素 */
+}
+
+/* 设置表格表头和单元格的样式 */
+table th, table td {
+    border: 1px solid #ddd; /* 设置边框为1像素的浅灰色 */
+    padding: 10px; /* 设置内边距为10像素 */
+    text-align: left; /* 文本左对齐 */
+}
+
+/* 设置表格表头的样式 */
+table th {
+    background-color: #f2f2f2; /* 设置背景颜色为浅灰色 */
+}
+
+/* 设置景点图片的样式 */
+.sight-image {
+    max-width: 100%; /* 设置图片的最大宽度 */
+    height: auto; /* 保持图片宽高比 */
+    border-radius: 8px; /* 设置圆角为8像素 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 添加阴影效果 */
+}
+
+/* 设置页脚的样式 */
+footer {
+    background: #adadad; /* 设置背景颜色为浅灰色 */
+    padding: 10px; /* 设置内边距为10像素 */
+    text-align: center; /* 文本居中对齐 */
+    color: #333; /* 设置文字颜色为深灰色 */
+    font-size: 14px;
+}
+
+/* 设置响应式布局，当屏幕宽度大于等于768像素时 */
+@media (min-width: 768px) {
+    .container {
+        max-width: 960px; /* 设置最大宽度为960像素 */
+        margin: 0 auto; /* 水平居中 */
+    }
+}
+
+/* 设置header-image的样式 */
+.header-image {
+    width: 40%; /* 设置图片宽度为100% */
+    height: auto; /* 保持图片宽高比 */
+    border-radius: 8px; /* 设置圆角为8像素 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 添加阴影效果 */
+    margin-top: 20px; /* 设置顶部外边距为20像素 */
+    margin-bottom: 20px; /* 设置底部外边距为20像素 */
+}
+
+/* 设置表格行的背景颜色 */
+table tbody tr:nth-child(odd) {
+    background-color: rgb(248, 138, 239); /* 设置奇数行的背景颜色 */
+}
+
+table tbody tr:nth-child(even) {
+    background-color: rgb(125, 203, 241); /* 设置偶数行的背景颜色 */
+}
+
+/* 设置不同背景颜色的类 */
+.background-color-1 {
+    background-color: rgba(255, 240, 245, 0.8); /* 浅粉红色 */
+}
+
+.background-color-2 {
+    background-color: rgba(255, 250, 205, 0.8); /* 浅黄色 */
+}
+
+.background-color-3 {
+    background-color: rgba(230, 230, 250, 0.8); /* 浅紫色 */
+}
+
+.background-color-4 {
+    background-color: rgba(221, 235, 247, 0.8); /* 浅蓝色 */
+}
+
+.background-color-5 {
+    background-color: rgba(255, 248, 220, 0.8); /* 浅金色 */
+}
+
+.background-color-6 {
+    background-color: rgba(217, 245, 217, 0.8); /* 浅绿色 */
+}
+
+/* 设置内容图片的样式 */
+.content-image {
+    width: 100%;
+    max-width: 400px; /* 设置最大宽度为400像素 */
+    height: auto; /* 保持图片宽高比 */
+    border-radius: 8px; /* 设置圆角为8像素 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 添加阴影效果 */
+    margin-top: 20px; /* 设置顶部外边距为20像素 */
+    margin-bottom: 20px; /* 设置底部外边距为20像素 */
+    float: right; /* 图片右浮动 */
+    margin-left: 20px; /* 设置左侧外边距为20像素 */
+}
+
+/* 设置内容图片的样式 */
+.Landscapes-image {
+    width: 20%;
+    height: auto; /* 保持图片宽高比 */
+    border-radius: 8px; /* 设置圆角为8像素 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 添加阴影效果 */
+    margin-top: 20px; /* 设置顶部外边距为20像素 */
+    margin-bottom: 20px; /* 设置底部外边距为20像素 */
+    margin-left: 20px; /* 设置左侧外边距为20像素 */
+}
+
+/* 水平线样式 */
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* 设置段落区域的样式 */
+section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f1f5f3;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 设置欢迎部分的样式 */
+#welcome {
+    background-color: #f0f8ff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 设置用户评价部分的样式 */
+#reviews {
+    background-color: #fff3e0;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 设置相关文章部分的样式 */
+#articles {
+    background-color: #e8f5e9;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 设置旅游提示部分的样式 */
+#tips {
+    background-color: #f5f5f5;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 设置位置部分的样式 */
+#location {
+    background-color: #e3f2fd;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 设置联系表单部分的样式 */
+#contact {
+    background-color: #c4e0c0;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 设置表单组的样式 */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* 设置标签的样式 */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* 设置输入框的样式 */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+/* 设置输入框聚焦时的样式 */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #43a047;
+}
+
+/* 设置按钮的样式 */
+button {
+    background-color: #43a047;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width:100%
+}
+
+/* 设置按钮悬停时的样式 */
+button:hover {
+    background-color: #388e3c;
+}
+
+/* styles.css */
+#formResponse {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #000; /* 添加一个默认颜色以便于调试 */
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+    animation: fadeIn 0.3s; /* Fade in effect */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #ffffff;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.3s;
+}
+
+/* The Close Button */
+.close {
+    color: #e33d3d;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #b32929;
+    text-decoration: none;
+}
+
+/* Animation for fading in the modal */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Animation for sliding in the modal content */
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Success and Error Messages */
+.modal-content.success {
+    border-color: #4CAF50;
+}
+
+.modal-content.error {
+    border-color: #f44336;
+}
+
+.modal-content p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.modal-content p.success {
+    color: #4CAF50;
+}
+
+.modal-content p.error {
+    color: #f44336;
+}
+
+/* Icons */
+.modal-content .icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.modal-content .icon.success {
+    color: #4CAF50;
+}
+
+.modal-content .icon.error {
+    color: #f44336;
+}
+
+/* 轮播图容器样式 */
+.carousel {
+    position: relative;
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap; /* 防止子元素换行 */
+    height: 400px;
+}
+
+/* 轮播图图片样式 */
+.carousel-image {
+    width: auto;
+    display: inline-block; /* 使图片在同一行显示 */
+    transition: transform 0.5s ease-in-out; /* 添加过渡效果 */
+    height: 400px;
+}
+
+/* 使用伪元素来创建无限滚动效果 */
+.carousel::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0;
+}
+
+/* 设置预订部分的样式 */
+#bookings {
+    background-color: rgb(192, 241, 255);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 设置预订列表的样式 */
+#bookingList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 设置预订列表项的样式 */
+#bookingList li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #a8e69f;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(236, 37, 37, 0.1);
+}
